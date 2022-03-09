@@ -93,6 +93,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CryptoActions.vb" />
     <Compile Include="Debugger.Designer.vb">
       <DependentUpon>Debugger.vb</DependentUpon>
     </Compile>

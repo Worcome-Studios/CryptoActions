@@ -37,6 +37,7 @@ Partial Class StringAndFiles
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -52,7 +53,6 @@ Partial Class StringAndFiles
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -200,6 +200,16 @@ Partial Class StringAndFiles
         Me.TabPage1.Text = "Strings"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(181, 509)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(62, 17)
+        Me.CheckBox1.TabIndex = 11
+        Me.CheckBox1.Text = "Base64"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'TabPage2
         '
         Me.TabPage2.Controls.Add(Me.ComboBox2)
@@ -346,16 +356,6 @@ Partial Class StringAndFiles
         Me.Label4.Size = New System.Drawing.Size(101, 13)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Archivo descifrado: "
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(181, 509)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(62, 17)
-        Me.CheckBox1.TabIndex = 11
-        Me.CheckBox1.Text = "Base64"
-        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'StringAndFiles
         '

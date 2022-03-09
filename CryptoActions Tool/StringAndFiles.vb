@@ -148,11 +148,19 @@ Public Class StringAndFiles
 
 #Region "Strings"
     Private Sub btnCifrar_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        RichTextBox2.Text = Encriptar(RichTextBox1.Text)
+        If CheckBox1.Checked Then
+            RichTextBox2.Text = EncodeBase64(RichTextBox1.Text)
+        Else
+            RichTextBox2.Text = Encriptar(RichTextBox1.Text)
+        End If
     End Sub
 
     Private Sub btnDesicfrar_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        RichTextBox1.Text = Descencriptar(RichTextBox2.Text)
+        If CheckBox1.Checked Then
+            RichTextBox1.Text = DecodeBase64(RichTextBox2.Text)
+        Else
+            RichTextBox1.Text = Descencriptar(RichTextBox2.Text)
+        End If
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
@@ -223,6 +231,22 @@ Public Class StringAndFiles
 
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
         TextBox4.Text = CreateRandomString("CryptographKey")
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked Then
+            Label1.Visible = False
+            Label2.Visible = False
+            Label3.Visible = False
+            TextBox1.Visible = False
+            ComboBox1.Visible = False
+        Else
+            Label1.Visible = True
+            Label2.Visible = True
+            Label3.Visible = True
+            TextBox1.Visible = True
+            ComboBox1.Visible = True
+        End If
     End Sub
 #End Region
 End Class
